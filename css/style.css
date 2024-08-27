@@ -216,18 +216,171 @@ body {
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.812);
-  /* z-index: 1; */
-  /* opacity: 0; */
-
   transform: scaleY(0);
   transition: all 0.2s ease-in-out;
   transform-origin: 100% 100%;
 }
-.img-container:hover::after{
+.img-container:hover::after {
   opacity: 1;
-  transform: scaleY(1)
+  transform: scaleY(1);
 }
-.img-container:hover .img-content{
+.img-container:hover .img-content {
   opacity: 1;
   top: 40%;
+}
+
+/* ! ===================== Food Menu ====================== */
+.food-menu-heading {
+  font-weight: 400;
+  color: #666;
+  font-size: 4rem;
+  text-align: center;
+}
+.food-menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 0 30px 0;
+}
+.food-menu-container img {
+  display: block;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+.food-menu-item {
+  display: flex;
+  flex: 1 1 45%;
+  justify-content: space-evenly;
+  margin-bottom: 3rem;
+}
+.food-description {
+  margin: auto 1.5rem;
+}
+.food-title {
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: #444;
+}
+.food-description p {
+  font-size: 1.4rem;
+  color: #555;
+  font-weight: 500;
+}
+.food-description .food-price {
+  color: #117964;
+  font-weight: 400;
+}
+
+/* !=============== testonomial ==================== */
+#testonomial {
+  padding: 5em 0;
+  background: rgb(243, 243, 243);
+}
+.testonomial-title {
+  text-align: center;
+  font-size: 3rem;
+  color: #555;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.testonomial-container {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  font-size: 1.6rem;
+  padding: 1rem;
+}
+.testonomial-box .checked {
+  color: #ff9529;
+}
+
+.testonomial-box .testonomial-text {
+  margin: 1em 0;
+  color: #444;
+}
+.testonomial-box {
+  text-align: center;
+  padding: 1em;
+}
+.custom-detail img {
+  display: block;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  margin: auto;
+}
+
+/* ! ============= Contact Us ==================== */
+#contact {
+  padding: 5em 0;
+  background: rgb(246, 246, 246);
+}
+.contact-container {
+  background: #fff;
+  display: flex;
+}
+.contact-img {
+  width: 50%;
+}
+.contact-img img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  height: 400px;
+  object-position: center;
+}
+.form-container {
+  width: 50%;
+  margin: auto;
+  padding: 1em;
+}
+.form-container input {
+  display: block;
+  width: 100%;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  margin: 1em;
+  padding: 1em 0;
+  color: #444;
+  font-weight: 400;
+  caret-color: green;
+  border-bottom: 2px solid #ddd;
+}
+.form-container textarea {
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 1em 0.3em;
+  border-bottom: 2px solid #ddd;
+  margin-right: 1em;
+  caret-color: red;
+}
+.form-container h2 {
+  font-size: 3rem;
+  font-weight: 400;
+  color: #444;
+  margin-bottom: 1em;
+}
+.form-container a {
+  font-size: 1.2em;
+}
+/* ! ================= Footer Styling ========== */
+#footer h2 {
+  text-align: center;
+  font-size: 2rem;
+  padding: 3rem;
+  font-weight: 500;
+  color: #fff;
+  background: rgb(65, 65, 65);
+  text-transform: capitalize;
+}
+#footer h2::before {
+  content: "\2665"; 
+  color: red;
+  font-size: 2.3rem; 
 }
